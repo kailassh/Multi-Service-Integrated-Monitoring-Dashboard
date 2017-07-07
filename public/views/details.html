@@ -1,0 +1,66 @@
+<div class="content">
+  <h1>Client Data</h1>
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <td>{{dt.name}}</td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td>{{dt.address}}</td>
+    </tr>
+        <tr>
+          <th>Private-IP</th>
+          <td>{{dt["private-ip"]}}</td>
+        </tr>
+        <tr>
+          <th>Cloud-Environment</th>
+          <td>{{dt["cloud-env"]}}</td>
+        </tr>
+        <tr>
+          <th>Region</th>
+          <td>{{dt.region}}</td>
+        </tr>
+        <tr>
+          <th>De-register</th>
+          <td>{{dt.deregister}}</td>
+        </tr>
+         <tr>
+          <th>Subcriptions</th>
+          <td>{{dt.subscriptions}}</td>
+        </tr>
+        <tr>
+          <th>Keep-Alive</th>
+          <td>{{dt.keepalive}}</td>
+        </tr>
+        <tr>
+          <th>PerfData</th>
+          <td><a href="{{dt.PerfData}}">{{dt.PerfData}}</a></td>
+        </tr>
+        <tr>
+          <th>CPU</th>
+          <td><img src="{{dt.cpu}}"/></td>
+        </tr>
+        <tr>
+          <th>Memory</th>
+          <td><img src="{{dt.memory}}"/></td>
+        </tr>
+        <tr>
+          <th>Network</th>
+          <td><img src="{{dt.network}}"/></td>
+        </tr>
+        <tr>
+          <th>Load</th>
+          <td><img src="{{dt.load}}"/></td>
+        </tr>
+        <tr>
+          <th>Version</th>
+          <td>{{dt.version}}</td>
+        </tr>
+        <tr>
+          <th>TimeStamp</th>
+          <td>{{dt.timestamp}}</td>
+        </tr>
+        </table>
+
+</div>

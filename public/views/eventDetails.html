@@ -1,0 +1,66 @@
+<div class="content">
+  <h1>Event Details</h1>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <td>{{pt.client.name}}</td>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <td>{{pt.client.address}}</td>
+  </tr>
+      <tr>
+        <th>Private-IP</th>
+        <td>{{pt.client["private-ip"]}}</td>
+      </tr>
+      <tr>
+        <th>Cloud-Environment</th>
+        <td>{{pt.client["cloud-env"]}}</td>
+      </tr>
+      <tr>
+        <th>Region</th>
+        <td>{{pt.client.region}}</td>
+      </tr>
+      <tr>
+        <th>De-register</th>
+        <td>{{pt.client.deregister}}</td>
+      </tr>
+       <tr>
+        <th>Subcriptions</th>
+        <td>{{pt.client.subscriptions}}</td>
+      </tr>
+      <tr>
+        <th>Keep-Alive</th>
+        <td>{{pt.client.keepalive}}</td>
+      </tr>
+      <tr>
+        <th>PerfData</th>
+        <td><a href="{{pt.client.PerfData}}">{{pt.client.PerfData}}</a></td>
+      </tr>
+      <tr>
+        <th>CPU</th>
+        <td><img src="{{pt.client.cpu}}"/></td>
+      </tr>
+      <tr>
+        <th>Memory</th>
+        <td><img src="{{pt.client.memory}}"/></td>
+      </tr>
+      <tr>
+        <th>Network</th>
+        <td><img src="{{pt.client.network}}"/></td>
+      </tr>
+      <tr>
+        <th>Load</th>
+        <td><img src="{{pt.client.load}}"/></td>
+      </tr>
+      <tr>
+        <th>Version</th>
+        <td>{{pt.client.version}}</td>
+      </tr>
+      <tr>
+        <th>TimeStamp</th>
+        <td>{{pt.client.timestamp}}</td>
+      </tr>
+      </table>
+
+</div>

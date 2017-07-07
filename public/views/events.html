@@ -1,0 +1,23 @@
+<div class="content" ng-controller="AppEvents">
+  <h1>Events</h1>
+  Search: <input type="text" ng-model="search" placeholder="Search for an Event" />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Checks</th>
+        <th>Output</th>
+        <th>Occurences</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="list in lists | orderBy: order | filter: search">
+        <td ng-click="showEventsData(list._id)">{{list.client.name}}</td>
+        <td ng-click="showEventsData(list._id)">{{list.check.name}}</td>
+        <td ng-click="showEventsData(list._id)">{{list.check.output}}</td>
+        <td ng-click="showEventsData(list._id)">{{list.occurrences}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
